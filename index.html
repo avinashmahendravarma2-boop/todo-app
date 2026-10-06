@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What's the Plan for Today?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>What's the Plan for Today?</h1>
+
+    <form id="todo-form" autocomplete="off">
+      <input id="todo-input" type="text" placeholder="Add a todo" aria-label="Add a todo" maxlength="120" />
+      <button type="submit">Add Todo</button>
+    </form>
+    <p id="hint" class="hint">Tip: type "Make Food 3" to add "Make Food" 3 times.</p>
+
+    <ul id="todo-list" aria-live="polite"></ul>
+    <p id="empty" class="empty" hidden>Nothing planned yet. Add your first todo above.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
